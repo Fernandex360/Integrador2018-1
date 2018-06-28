@@ -96,7 +96,7 @@
         <ul class="navbar-nav mr-auto">
             @guest
             <li class="nav-item">
-                <a class="nav-link" href="/">INICIO</a>
+                <a class="nav-link" href="principal">INICIO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="aplicacion">APLICACIÓN</a>
