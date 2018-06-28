@@ -194,10 +194,7 @@
 	    	</div> <!-- row -->
 		</div> <!--  big container -->
 	</div>
-
-
-
-
       
 </div>
+
 @endsection
