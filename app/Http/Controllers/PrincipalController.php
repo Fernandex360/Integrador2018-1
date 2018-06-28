@@ -14,7 +14,7 @@ class PrincipalController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         \Mapper::location('lima')->map(['zoom' => 13,'center' => true, 'marker' => false,]);
         
@@ -27,7 +27,9 @@ class PrincipalController extends Controller
             );
 
         }
-        \Mapper::marker(53.381128999999990000, -1.470085000000040000, ['draggable' => true, 'eventDragStart' => 'console.log("drag start");']);
+       
+
+
         return view('principal');
     }
 
@@ -49,7 +51,21 @@ class PrincipalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        \Mapper::location($request->busqueda)->map(['zoom' => 13,'center' => true, 'marker' => false,]);
+        
+        $denuncias=Denuncia::all();
+
+        foreach ($denuncias as $denuncia) {
+   
+            \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud,
+             'Content', ['open' => false, 'maxWidth'=> 300, 'markers' => ['title' => 'Hola' ,'content'=>'msadsad']]
+            );
+
+        }
+       
+
+
+        return view('principal');
     }
 
     /**
