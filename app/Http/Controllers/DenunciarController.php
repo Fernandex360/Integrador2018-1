@@ -21,14 +21,18 @@ class DenunciarController extends Controller
      */
     public function index()
     {
-        \Mapper::map(-12.033543499999999, -76.9361618, [
+        \Mapper::map(-12.042393100000002, -76.9473033, [
         'zoom'=>13,
+        'center'=>true,
         'draggable' => true, 'eventDragEnd' => 
         'var latitud=event.latLng.lat();
         var longitud=event.latLng.lng();
         console.log(latitud+ "  "+longitud);
         document.getElementById("latitud").value =latitud;
         document.getElementById("longitud").value =longitud;']);
+
+
+
         return view('denunciar');
     }
 
@@ -69,7 +73,7 @@ class DenunciarController extends Controller
              $denuncia->longitud=$request->input('longitud');
              $denuncia->id_denunciante=auth()->id();
              $denuncia->save();   
-             return view('denunciar')->with('success,Denuncia registrada correctamente');
+             return redirect('/');
     }
 
     /**

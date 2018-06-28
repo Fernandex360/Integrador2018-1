@@ -96,13 +96,13 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="#">INICIO</a>
+                                <a class="nav-link" href="/">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">APLICACIÓN</a>
+                                <a class="nav-link" href="aplicacion">APLICACIÓN</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="#">NOSOTROS</a>
+                                <a class="nav-link" href="nosotros">NOSOTROS</a>
                             </li>
                         @else
                             <li class="nav-item">
@@ -112,13 +112,13 @@
                                 <a class="nav-link" href="denunciar">DENUNCIAR</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="#">ESTADISTICA</a>
+                                <a class="nav-link" href="estadistica">ESTADISTICA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">APLICACIÓN</a>
+                                <a class="nav-link" href="aplicacion">APLICACIÓN</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="#">NOSOTROS</a>
+                                <a class="nav-link" href="nosotros">NOSOTROS</a>
                             </li>
                         @endguest
                     </ul>
