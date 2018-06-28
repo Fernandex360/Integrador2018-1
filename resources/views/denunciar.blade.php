@@ -1,4 +1,5 @@
-@extends('layouts.layout2')
+
+@extends('layouts.app')
 
 @section('content')
 @if(count($errors)>0)
@@ -193,8 +194,6 @@
 	    	</div> <!-- row -->
 		</div> <!--  big container -->
 	</div>
-
-
 
 
 

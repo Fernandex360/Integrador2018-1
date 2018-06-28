@@ -11,8 +11,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script> 
- 
     
 
     <!-- Fonts -->
@@ -22,6 +20,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+<!-- CSS Files -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="../assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
 
 
 
@@ -29,8 +37,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class=" color navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+        <nav class=" color navbar navbar-expand-md navbar-light navbar-laravel" data-color="jade">
+            <div class="container" data-color="jade">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -127,6 +135,18 @@
         </nav>
         <main class="col-md-12 mt-0">
             @yield('content')
+
+
+	<!--   Core JS Files   -->
+	<script src="../assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="../assets/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="../assets/js/jquery.validate.min.js"></script>
         </main>
     </div>
 </body>
