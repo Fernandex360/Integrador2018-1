@@ -23,7 +23,8 @@
 	 	 	 	 	 @endforeach
 	 	 	 	 </ul>
 	 	 	 </div>
-	 	 	 @endif
+			   @endif
+
 <div class="image-container set-full-height m-0" style="background-image: url('../assets/img/wizard-book.jpg')">
 
 <div class="container-fluid ">
@@ -84,7 +85,7 @@
 				        	</div>
 
                             <div class="tab-pane" id="captain">
-		                        <h4 class="info-text">Indique el Tipo de Incidente Sucedido </h4>
+		                        <h4 class="info-text">Indique el tipo de incidente sucedido </h4>
 		                        <div class="row">
 		                            <div class="col-sm-12">
 		                            	<div class="form-row">
