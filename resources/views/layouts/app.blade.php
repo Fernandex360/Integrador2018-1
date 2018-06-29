@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('app.name', 'Denuncias Anonimas')</title>
+    
      <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
 
     {!! Html::style('assets/css/material-bootstrap-wizard.css') !!}
@@ -17,6 +18,7 @@
     {!! Html::script('assets/js/jquery.bootstrap.js') !!}
     {!! Html::script('assets/js/material-bootstrap-wizard.js') !!}
     {!! Html::script('assets/js/jquery.validate.min.js') !!}
+
 
 </head>
 <body>
@@ -61,10 +63,14 @@
                         <!-- Authentication Links -->
             @guest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Administrador') }}</a>
             </li>
             @else
             <li class="nav-item dropdown ">
@@ -90,6 +96,7 @@
     </nav>
         <main class="col-md-12 m-0 p-0">
             @yield('content')
+            
         </main>
     </div>
     

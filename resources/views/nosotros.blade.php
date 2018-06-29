@@ -49,7 +49,7 @@
 	<body>
 		
 	<div class="fh5co-loader"></div>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light m-0 ">
+	<nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
       <a class="navbar-brand ml-5" href="/">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

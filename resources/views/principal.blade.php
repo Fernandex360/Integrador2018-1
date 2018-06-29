@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<script src="{{ asset('js/app.js') }}" defer></script> 
 
 <input id="token" type="hidden" name="_token" value="{{ csrf_token() }}">
 

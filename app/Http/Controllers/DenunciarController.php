@@ -58,7 +58,7 @@ class DenunciarController extends Controller
             if($request->hasFile('evidencia')){
                 $file = $request->file('evidencia');
                 $name=time().$file->getClientOriginalName();
-                $file->move(public_path().'/tuspruebas/',$name);
+                $file->move(public_path().'/evidencias/',$name);
             }
             $this->validate($request,['incidente'=>'required','fecha'=>'required',
             'descripcion'=>'required','latitud'=>'required','longitud' => 'required']);
