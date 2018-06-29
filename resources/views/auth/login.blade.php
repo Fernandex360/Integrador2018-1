@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header text-center">{{ __('Iniciar sesión') }}</div>
+<style type="text/css">
+    *{
+        font-size: 16px;
+    }
 
+</style>
+<div class="container ">
+    <div class="row d-flex justify-content-center  ">
+        <div class="col-md-8 ">
+            <div class="card align-items-center  mt-5">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
@@ -59,13 +63,13 @@
                                     {{ __('Olvidaste tu contraseña?') }}
                                 </a>
                             </div>
+                             <div class="col-md-8 offset-md-4 mt-5">
+                                <a href="{{url('auth/google')}}"><img src="img/google.png"></a>
+                                <a href="{{url('/auth/twitter')}}"><img src="img/twitter.png"></a>
+                                <a href="{{url('/auth/facebook')}}"><img src="img/facebook.png"></a>
+                            </div>
                         </div>
                     </form>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="{{ url('/auth/facebook') }}" class="fa fa-facebook"></a>
-                    <a href="{{ url('/auth/twitter') }}" class="fa fa-twitter"></a>
-                    <a href="{{url('auth/google')}}" class="fa fa-google"></a>
                 </div>
             </div>
         </div>

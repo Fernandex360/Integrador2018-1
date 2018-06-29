@@ -195,12 +195,7 @@
 		        </div>
 	    	</div> <!-- row -->
 		</div> <!--  big container -->
-<<<<<<< HEAD
 	</div>
-      
-=======
-	</div>  
->>>>>>> 2d11317140e328bbd7c6e1d67fcb1c1303f84e56
 </div>
 
 @endsection

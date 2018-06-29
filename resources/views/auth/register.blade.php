@@ -5,8 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registrar') }}</div>
-
+                <div class="card-header"><h1 class="h6 text-center">Registrar</h1></div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                         @csrf
@@ -67,13 +66,13 @@
                                     {{ __('Registrar') }}
                                 </button>
                             </div>
+                             <div class="col-md-8 offset-md-4 mt-5">
+                                <a href="{{url('auth/google')}}"><img src="img/google.png"></a>
+                                <a href="{{url('/auth/twitter')}}"><img src="img/twitter.png"></a>
+                                <a href="{{url('/auth/facebook')}}"><img src="img/facebook.png"></a>
+                            </div>
                         </div>
                     </form>
-                </div>
-                <div class="card-footer text-center">
-                    <a href="{{ url('/auth/facebook') }}" class="fa fa-facebook"></a>
-                    <a href="{{ url('/auth/twitter') }}" class="fa fa-twitter"></a>
-                    <a href="{{url('auth/google')}}" class="fa fa-google"></a>
                 </div>
             </div>
         </div>

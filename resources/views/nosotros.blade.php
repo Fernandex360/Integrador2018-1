@@ -41,7 +41,7 @@
 	<!-- Modernizr JS -->
 	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
 
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 
         	<link rel="stylesheet" href="../shaape/css/style.css">
 
