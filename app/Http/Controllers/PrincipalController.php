@@ -16,7 +16,7 @@ class PrincipalController extends Controller
      */
     public function index(Request $request)
     {
-        \Mapper::location('lima')->map(['zoom' => 13,'center' => true, 'marker' => false,]);
+        \Mapper::location('Lima')->map(['zoom' => 13,'center' => true, 'marker' => false,]);
         
         $denuncias=Denuncia::all();
 
