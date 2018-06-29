@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','PrincipalController@index')->name('inicio');
 Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController');
 Route::get('aplicacion',function(){
