@@ -8,10 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('app.name', 'Denuncias Anonimas')</title>
+    <title>@yield('app.name', 'Denuncias Anónimas')</title>
 
     <!-- Scripts -->
-    
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -22,7 +23,6 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
 
 <!--     Fonts and icons     -->
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
 <!-- CSS Files -->
@@ -32,10 +32,9 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
-     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="../shaape/css/style.css">
-
 
 </head>
 <body>
@@ -43,7 +42,7 @@
         <nav class=" p-0 color navbar navbar-expand-md navbar-light navbar-laravel" data-color="jade">
             <div class="container d-flex align-content-end ">
                 <a class="navbar-brand " href="{{ url('/') }}">
-                   Denuncias Anonimas
+                   Denuncias Anónimas
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -106,7 +105,7 @@
             </li>
             @else
             <li class="nav-item">
-                <a class="nav-link" href="/">INICIO</a>
+                <a class="nav-link" href="principal">INICIO</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="denunciar">DENUNCIAR</a>
@@ -142,8 +141,11 @@
 	<script src="../assets/js/material-bootstrap-wizard.js"></script>
 
 	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    
         </main>
     </div>
+    
 </body>
+
 </html>

@@ -3,7 +3,6 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Nosotros</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	
@@ -11,7 +10,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('app.name', 'Denuncias Anónimas')</title>
 
     <!-- Scripts -->
     
@@ -41,10 +40,7 @@
 
 	<!-- Modernizr JS -->
 	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         	<link rel="stylesheet" href="../shaape/css/style.css">
@@ -56,7 +52,7 @@
         <nav class=" color navbar navbar-expand-md navbar-light navbar-laravel" data-color="jade">
             <div class="container" data-color="jade">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Denuncias Anónimas
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -120,7 +116,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="/">INICIO</a>
+                                <a class="nav-link" href="principal">INICIO</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="aplicacion">APLICACIÓN</a>
@@ -130,7 +126,7 @@
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="/">INICIO</a>
+                                <a class="nav-link" href="principal">INICIO</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="denunciar">DENUNCIAR</a>
@@ -205,7 +201,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<span>Quienes hicieron posible esto</span>
 					<h2>Conoce nuestro equipo</h2>
-					<p>Alumnos de la carrera de Diseño de Software e Integración de Sistemas 3er Ciclo.</p>
+					<p>DISEÑO DE SOFTWARE E INTEGRACIÓN DE SISTEMAS 2018-I</p>
 				</div>
 			</div>
 			<div class="row">
@@ -214,10 +210,10 @@
 						<img src="../shaape/images/leidy.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Leidy Callupe</h3>
 						<strong class="role">Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+						<p>Estudiante de la carrera de Diseño de Software e Integración Sistemas 3er Ciclo del Instituto Tecnológico Tecsup.</p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://www.facebook.com/leidy.callupesantisteban.56"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://www.facebook.com/leidy.callupesantisteban.56" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/leidy-callupe-santisteban-353598145/" target="_blank"><i class="icon-linkedin"></i></a></li>
 							<li><a href="#"><i class="icon-github"></i></a></li>
 						</ul>
 					</div>
@@ -227,11 +223,11 @@
 						<img src="../shaape/images/jose.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>José Cristobal</h3>
 						<strong class="role">Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+						<p>Estudiante de la carrera de Diseño de Software e Integración Sistemas 3er Ciclo del Instituto Tecnológico Tecsup.</p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://www.facebook.com/jose.cristobal.7792"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
+							<li><a href="https://www.facebook.com/jose.cristobal.7792" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/jose-luis-cristobal-erquinio-90a36a143/" target="_blank"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://github.com/joseluis0218" target="_blank"><i class="icon-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -240,11 +236,11 @@
 						<img src="../shaape/images/erick.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Erick Fernández</h3>
 						<strong class="role">Developer</strong>
-						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+						<p>Estudiante de la carrera de Diseño de Software e Integración Sistemas 3er Ciclo del Instituto Tecnológico Tecsup.</p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://www.facebook.com/Roy360erick"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
+							<li><a href="https://www.facebook.com/Roy360erick" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/erick-roy-fernandez-terrel-597369143/" target="_blank"><i class="icon-linkedin"></i></a></li>
+							<li><a href="https://github.com/Fernandex360" ><i class="icon-github"></i></a></li>
 						</ul>
 					</div>
 				</div>

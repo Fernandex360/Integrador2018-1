@@ -50,7 +50,7 @@
 							    <div class="container">
 							    	<div class="row">
 							    		<div class="col-sm-8">
-							    			<h4 class="info-text">Marque el lugar exacto donde sucedio el inicidente</h4>
+							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
     								<input type="number" name="latitud" id="latitud" hidden required>
@@ -64,13 +64,13 @@
 							    <div class="container">
 							    	<div class="row">
 							    		<div class="col-sm-12">
-							    			<h4 class="info-text">Brindenos los detalles del incidente. El campo de evidencia es opcional, sin embargo, aportaría mucho a la veracidad de la denuncia.</h4>
+							    			<h4 class="info-text">Los campos con (*) son de caracter obligatorio.</h4>
 							                <div class="form-group">
-							                    <label for="descripcion" class="control-label" >Descripción</label>
-							                    <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Ejemplo El asalto fue ocurrido a alturas de la noche, el tipo iba armado, era de piel morena,usaba un casaca negra, un jean azul y una gorra roja ." required></textarea>
+							                    <label for="descripcion" class="control-label" >Descripción (*)</label>
+							                    <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Ejemplo: El asalto fue ocurrido a alturas de la noche, el tipo iba armado, era de piel morena,usaba un casaca negra, un jean azul y una gorra roja ." required></textarea>
 							                </div>
 							                <div class="form-group ">
-							                    <label for="fecha">Fecha Del Incidente</label> 	
+							                    <label for="fecha">Fecha Del Incidente (*)</label> 	
 							                    <input type="date" name="fecha" id="fecha" class="form-control" required>
 							                </div>
 							                <div class="col-sm-offset-0">
@@ -90,7 +90,7 @@
 		                            	<div class="form-row">
 		                                <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip">                  
-												<input type="radio" name="incidente" value="Robo">
+												<input type="radio" name="incidente" value="Robo" required>
 		                                        <div class="icon">
 		                                            <img src="../assets/img/robo.png" class="material-icons" >
 		                                        </div>
@@ -99,7 +99,7 @@
 		                               	</div>
 		                                <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"    value="Violencia">
+		                                        <input type="radio" name="incidente"    value="Violencia" required>
 		                                        <div class="icon">
                                                     <img src="../assets/img/violencia.png"  class="material-icons">
 		                                        </div>
@@ -108,7 +108,7 @@
 		                                </div>
 										<div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"    value="Vandalismo">
+		                                        <input type="radio" name="incidente"    value="Vandalismo" required>
 		                                        <div class="icon">
                                                     <img src="../assets/img/vandalismo.png" class="material-icons">
 		                                        </div>
@@ -119,7 +119,7 @@
                                         <div class="form-row">
                                         <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"    value="Venta de Drogas">
+		                                        <input type="radio" name="incidente"    value="Venta de Drogas" required>
 		                                        <div class="icon">
                                                     <img src="../assets/img/drogas.png" class="material-icons">
 		                                        </div>
@@ -128,7 +128,7 @@
                                         </div>
                                         <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"   value="Desechos">
+		                                        <input type="radio" name="incidente"   value="Desechos" required>
 		                                        <div class="icon">
                                                     <img src="../assets/img/desechos.png"  class="material-icons">
 		                                        </div>
@@ -137,7 +137,7 @@
                                         </div>
                                             <div class="col-sm-4">
 		                                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                            <input type="radio" name="incidente"   value="Homicidio">
+		                                            <input type="radio" name="incidente"   value="Homicidio" required>
 		                                        <div class="icon">
                                                     <img src="../assets/img/asesinato.png" class="material-icons">
 		                                        </div>
@@ -148,7 +148,7 @@
                                         <div class="form-row">
                                         <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"   id="Acoso Callejero" value="Acoso Callejero">
+		                                        <input type="radio" name="incidente"   id="Acoso Callejero" value="Acoso Callejero" required>
 			                                    <div class="icon">
 	                                                <img src="../assets/img/acoso.png"  class="material-icons">
 			                                    </div>
@@ -157,7 +157,7 @@
                                         </div>
                                                 <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                                <input type="radio" name="incidente"   value="Incendio">
+		                                                <input type="radio" name="incidente"   value="Incendio" required>
 		                                                <div class="icon">
                                                         <img src="../assets/img/incendio.png"class="material-icons">
 		                                                </div>
@@ -166,7 +166,7 @@
                                                 </div>
                                                 <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                                <input type="radio" name="incidente"  value="Accidente de Transito">
+		                                                <input type="radio" name="incidente"  value="Accidente de Transito" required>
 		                                                <div class="icon">
                                                         <img src="../assets/img/accidente.png"  class="material-icons">
 		                                                </div>
