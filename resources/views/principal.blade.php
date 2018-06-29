@@ -5,22 +5,28 @@
 
 <div class="container buscar">
 	<div class="row">
-		<div class="col">
-			 {!! Form::open(['route' => ['inicio'],'method'=>'GET']) !!}
-				<input type="text" name="longitud" id="longitud" >
-				<input type="text" name="latitud" id="latitud">
-                <a href="#" class="btn-eliminar btn btn-danger btn-sm ">Buscar</a>
-             {!! Form::close() !!} 
+		<div class="col-md-12 barra">
+			 <div class="form-row">
+				 <form action="{{route('inicio')}}" class="col-md-4">
+				 	<input type="text" name="buscar" id="buscar" class="" >
+	                <input type="submit" name="btn-enviar" value="Buscar" class="btn-eliminar btn btn-danger btn-sm">
+				 </form>
+				 <form action="{{route('inicio')}}" class="col-md-2">
+				 	<input type="text" name="longitud" id="longitud" class="d-none" >
+					<input type="text" name="latitud" id="latitud" class="d-none" >
+	                <input type="submit" name="btn-enviar" value="Localizar" class="btn-eliminar btn btn-danger btn-sm">
+				 </form>
+			 </div>
 		</div>
 	</div>
 </div>
  <div class="mapa" style="height:90vh ">{!! Mapper::render()!!}</div>
 
  <style type="text/css">
- 	.buscar{
- 		position: fixed;
- 		z-index: 100;
- 	}
+	.buscar{
+		position: fixed;
+		z-index: 10;
+	} 	
 
  </style>
 
@@ -43,23 +49,6 @@
     console.log("tu navegador no tiene Geolocalizacion");
 	}
 
-	$('.btn-eliminar').click(function(e){
-		e.preventDefault();
-		if(!confirm("Estas seguro de eliminar !!!")){
-			return 'false';
-		}
-
-		var form=$(this).parents('form');
-		var url=form.attr('action');
-
-		$.get(url,form.serialize(),function(result){
-			row.fadeOut();
-			
-		}).fail(function(){
-
-		});
-
-	});
 });
  </script>
 @endsection

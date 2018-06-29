@@ -16,20 +16,40 @@ class PrincipalController extends Controller
      */
     public function index(Request $request)
     {
+        if (isset($request->longitud)){
+        $longitud=$request->longitud; 
+        $latitud=$request->latitud; 
 
-        \Mapper::location('Lima')->map(['zoom' => 13,'center' => true, 'marker' => false,]);
 
+        \Mapper::map($latitud, $longitud, ['zoom' => 15, 'markers' => ['title' => 'My Location', 'animation' => 'DROP'], 'clusters' => ['size' => 10, 'center' => true, 'zoom' => 20]]);
+        }else{
+
+            if(isset($request->buscar)){
+
+            \Mapper::location($request->buscar)->map(['zoom' => 13,'center' => true, 'marker' => false,]);
+
+            }else{
+
+            \Mapper::location('peru lima ate')->map(['zoom' => 13,'center' => true, 'marker' => false,]);
+            }
+        }
+       
         
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
+
+
+            \Mapper::marker($denuncia->latitud, $denuncia->longitud,['icon' => 'https://d2hlvggafz1wn0.cloudfront.net/2c100855-fc25-4e8e-8eb1-62c515c4cccf/photo-1-tiny.jpeg','animation' => 'DROP',
+            ]);
+         
+           
+            
+            
    
-            \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud,
-             'Content', ['open' => false, 'maxWidth'=> 300, 'markers' => ['title' => 'Hola' ,'content'=>'msadsad']]
-            );
+           
 
         }
-       
 
 
         return view('principal');
