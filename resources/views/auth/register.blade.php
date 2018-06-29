@@ -66,7 +66,7 @@
                                     {{ __('Registrar') }}
                                 </button>
                             </div>
-                             <div class="col-md-8 offset-md-4 mt-5">
+                             <div class="col-md-8 offset-md-4 mt-3">
                                 <a href="{{url('auth/google')}}"><img src="img/google.png"></a>
                                 <a href="{{url('/auth/twitter')}}"><img src="img/twitter.png"></a>
                                 <a href="{{url('/auth/facebook')}}"><img src="img/facebook.png"></a>

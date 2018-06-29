@@ -10,7 +10,8 @@
 <div class="container ">
     <div class="row d-flex justify-content-center  ">
         <div class="col-md-8 ">
-            <div class="card align-items-center  mt-5">
+            <div class="card mt-3">
+                <div class="card-header"><h1 class="h6 text-center">Ingresar</h1></div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
@@ -59,7 +60,7 @@
                                     {{ __('Iniciar sesión') }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <a class="btn" href="{{ route('password.request') }}">
                                     {{ __('Olvidaste tu contraseña?') }}
                                 </a>
                             </div>
