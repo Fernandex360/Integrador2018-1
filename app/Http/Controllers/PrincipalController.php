@@ -26,7 +26,7 @@ class PrincipalController extends Controller
 
             if(isset($request->buscar)){
 
-            \Mapper::location($request->buscar)->map(['zoom' => 13,'center' => true, 'marker' => false,]);
+            \Mapper::location('peru '.$request->buscar)->map(['zoom' => 13,'center' => true, 'marker' => false,]);
 
             }else{
 
@@ -34,104 +34,40 @@ class PrincipalController extends Controller
             }
         }
        
-        
+        $marcador= array('Drogas'=> '../assets/img/drogas.png',
+                        'Robo'   => '../assets/img/robo.png',
+                        'Violencia' => '../assets/img/violencia.png',
+                        'Vandalismo' => '../assets/img/vandalismo.png',
+                        'Desechos' => '../assets/img/desechos.png',
+                        'Homicidio' => '../assets/img/asesinato.png',
+                        'Acoso' => '../assets/img/acoso.png',
+                        'Incendio' => '../assets/img/incendio.png',
+                        'Accidente' => '../assets/img/accidente.png',
+                         );
         $denuncias=Denuncia::all();
-
+        
         foreach ($denuncias as $denuncia) {
 
-
-            \Mapper::marker($denuncia->latitud, $denuncia->longitud,['icon' => 'https://d2hlvggafz1wn0.cloudfront.net/2c100855-fc25-4e8e-8eb1-62c515c4cccf/photo-1-tiny.jpeg','animation' => 'DROP',
-            ]);
-         
-           
+            $contenido="
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col-12'>
+                        <h6>Fecha : <span>".$denuncia->fecha."</span></h6>
+                        <h6>Lugar :</h6>
+                        <h6>Descripcion : ".$denuncia->descripcion."</h6>
+                    </div>
+                </div>
+            </div>
+            ";
             
-            
-   
-           
 
+            \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud, $contenido,['icon' => $marcador[$denuncia->tipoIncidente]]);
         }
+
+
 
 
         return view('principal');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        \Mapper::location($request->busqueda)->map(['zoom' => 13,'center' => true, 'marker' => false,]);
-        
-        $denuncias=Denuncia::all();
-
-        foreach ($denuncias as $denuncia) {
-   
-            \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud,
-             'Content', ['open' => false, 'maxWidth'=> 300, 'markers' => ['title' => 'Hola' ,'content'=>'msadsad']]
-            );
-
-        }
-       
-
-
-        return view('principal');
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

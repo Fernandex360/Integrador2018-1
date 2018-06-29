@@ -1,6 +1,15 @@
 @extends('layouts.app')
 @section('content')
-<div>Aplicacion</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h4>Fecha :</h4>
+            <h4>Lugar :</h4>
+            <h4>Descripcion :</h4>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
     var longitud;

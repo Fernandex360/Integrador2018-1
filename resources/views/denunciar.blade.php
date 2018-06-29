@@ -148,7 +148,7 @@
                                         <div class="form-row">
                                         <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-		                                        <input type="radio" name="incidente"   id="Acoso Callejero" value="Acoso Callejero" required>
+		                                        <input type="radio" name="incidente"   id="Acoso Callejero" value="Acoso" required>
 			                                    <div class="icon">
 	                                                <img src="../assets/img/acoso.png"  class="material-icons">
 			                                    </div>
