@@ -10,6 +10,7 @@
 
     {!! Html::style('assets/css/material-bootstrap-wizard.css') !!}
     {!! Html::style('bootstrap4/css/bootstrap.min.css') !!}
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
     {!! Html::script('assets/js/jquery-2.2.4.min.js') !!}
     {!! Html::script('assets/js/bootstrap.min.js') !!}
