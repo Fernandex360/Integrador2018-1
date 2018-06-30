@@ -13,6 +13,7 @@
 Route::get('/','PrincipalController@index')->name('inicio');
 Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController');
+Route::resource('administrador','AdminController');
 Route::get('aplicacion',function(){
 	return view('aplicacion');
 });

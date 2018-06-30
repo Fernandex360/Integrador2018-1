@@ -16,5 +16,8 @@ class Denuncia extends Model
 
     	return $this->belongsTo('App\user');
    }
+   public function scopeSearch($query, $filtro){
 
+    return $query->where('tipoIncidente','LIKE',"%$filtro%");
+   }
 }
