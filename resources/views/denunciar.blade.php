@@ -121,11 +121,10 @@
                                         <div class="form-row">
                                         <div class="col-sm-4">
 		                                    <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-<<<<<<< HEAD
-		                                        <input type="radio" name="tipoIncidente"    value="Venta de Drogas" required>
-=======
+
+
 		                                        <input type="radio" name="incidente"    value="Drogas" required>
->>>>>>> 2584a74a468868bdddc6826622146704dc271147
+
 		                                        <div class="icon">
                                                     <img src="../assets/img/drogas.png" class="material-icons">
 		                                        </div>
@@ -172,11 +171,9 @@
                                                 </div>
                                                 <div class="col-sm-4">
 		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" >
-<<<<<<< HEAD
-		                                                <input type="radio" name="tipoIncidente"  value="Accidente de Transito" required>
-=======
+
 		                                                <input type="radio" name="incidente"  value="Transito" required>
->>>>>>> 2584a74a468868bdddc6826622146704dc271147
+
 		                                                <div class="icon">
                                                         <img src="../assets/img/accidente.png"  class="material-icons">
 		                                                </div>
@@ -207,16 +204,5 @@
 		</div> <!--  big container -->
 	</div>
 </div>
-<script type="text/javascript">
-	var dt = new Date();
 
-	// Display the month, day, and year. getMonth() returns a 0-based number.
-	var month = dt.getMonth()+1;
-	var day = dt.getDate();
-	var year = dt.getFullYear();
-
-	console.log(day + '-' + month + '-' + year);
-	document.form1.fecha.value=day + '/' + month + '/' + year;
-
-</script>
 @endsection
