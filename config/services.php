@@ -37,9 +37,9 @@ return [
     ],
 
     'google' => [
-        'client_id' => env('596810964601-fk948manpsrc5qll1l9coqn6jgf6kv44.apps.googleusercontent.com'),
-        'client_secret' => env('1HBV72UdFvQjVM95eYwU4cjH'),
-        'redirect' => env('http://denunciasanonimas.herokuapp.com/auth/facebook/callback'),
+        'client_id' => env('GOOGLE_ID'),
+        'client_secret' => env('GOOGLE_SECRET'),
+        'redirect' => env('GOOGLE_URL'),
     ],
     'facebook' => [
         'client_id' => env('FACEBOOK_ID'),

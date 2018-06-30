@@ -13,7 +13,11 @@
 Route::get('/','PrincipalController@index')->name('inicio');
 Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController');
+<<<<<<< HEAD
+Route::resource('administrador','AdminController');
+=======
 Route::resource('estadistica','estadisticaController');
+>>>>>>> 2584a74a468868bdddc6826622146704dc271147
 Route::get('aplicacion',function(){
 	return view('aplicacion');
 });
