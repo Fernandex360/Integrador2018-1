@@ -21,16 +21,13 @@ class DenunciarController extends Controller
      */
     public function index()
     {
-        \Mapper::map(-12.042393100000002, -76.9473033, [
-        'zoom'=>13,
-        'center'=>true,
-        'draggable' => true, 'eventDragEnd' => 
+
+        \Mapper::location('peru lima ate')->map(['zoom' => 15,'center' => true, 'marker' => true,'draggable' => true,
+        'eventDragEnd' => 
         'var latitud=event.latLng.lat();
         var longitud=event.latLng.lng();
-        console.log(latitud+ "  "+longitud);
         document.getElementById("latitud").value =latitud;
         document.getElementById("longitud").value =longitud;']);
-
 
 
         return view('denunciar');

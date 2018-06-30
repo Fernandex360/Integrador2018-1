@@ -42,10 +42,10 @@ class PrincipalController extends Controller
                         'Homicidio' => '../assets/img/asesinato.png',
                         'Acoso' => '../assets/img/acoso.png',
                         'Incendio' => '../assets/img/incendio.png',
-                        'Accidente' => '../assets/img/accidente.png',
+                        'Transito' => '../assets/img/accidente.png',
                          );
         $denuncias=Denuncia::all();
-        
+
         foreach ($denuncias as $denuncia) {
 
             $contenido="

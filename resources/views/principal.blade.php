@@ -33,7 +33,7 @@
 
 
  <script type="text/javascript">
- 	$(document).ready(function(){
+ 
  	var longitud;
     var latitud;
 	if ("geolocation" in navigator){    
@@ -50,6 +50,6 @@
     console.log("tu navegador no tiene Geolocalizacion");
 	}
 
-});
+
  </script>
 @endsection
