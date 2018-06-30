@@ -37,9 +37,9 @@ return [
     ],
 
     'google' => [
-        'client_id' => env('GOOGLE_ID'),
-        'client_secret' => env('GOOGLE_SECRET'),
-        'redirect' => env('GOOGLE_URL'),
+        'client_id' => '596810964601-fk948manpsrc5qll1l9coqn6jgf6kv44.apps.googleusercontent.com',
+        'client_secret' => '1HBV72UdFvQjVM95eYwU4cjH',
+        'redirect' => 'http://denunciasanonimas.herokuapp.com/auth/google/callback',
     ],
     'facebook' => [
         'client_id' => env('FACEBOOK_ID'),
@@ -48,8 +48,8 @@ return [
     ],
 
     'twitter' => [
-        'client_id'     => env('TWITTER_ID'),
-        'client_secret' => env('TWITTER_SECRET'),
-        'redirect'      => env('TWITTER_URL'),
+        'client_id'     => 'eFoHuEf3u8XWbDWYqPRtEotvk',
+        'client_secret' => 'DcVNrXeuwmLxVl5D58NbcnwcmdCCg4WZDpbmzXjoqA8qBBxQQn',
+        'redirect'      => 'http://denunciasanonimas.herokuapp.com/auth/twitter/callback',
     ],
 ];
