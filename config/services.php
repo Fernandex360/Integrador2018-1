@@ -44,7 +44,7 @@ return [
     'facebook' => [
         'client_id' => env('FACEBOOK_ID','182448992598810'),
         'client_secret' => env('FACEBOOK_SECRET','161ded92f531f20dc2cf58b2c3f738a16'),
-        'redirect' => env('FACEBOOK_URL','http://denunciasanonimas.herokuapp.com/auth/facebook/callback'),
+        'redirect' => env('FACEBOOK_URL','https://denunciasanonimas.herokuapp.com/auth/facebook/callback'),
     ],
 
     'twitter' => [
