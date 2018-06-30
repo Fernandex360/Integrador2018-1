@@ -56,7 +56,7 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'ec2-54-235-196-250.compute-1.amazonaws.com'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'd73s00uet0fal8'),
             'username' => env('DB_USERNAME', 'pxtxtgspvcqiln'),
