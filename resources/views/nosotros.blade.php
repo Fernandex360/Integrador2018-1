@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="../shaape/css/animate.css">
 
 	<link rel="stylesheet" href="../shaape/css/icomoon.css">
+		<link rel="stylesheet" href="../shaape/css/bootstrap.css">
+
 	<link rel="stylesheet" href="../shaape/css/magnific-popup.css">
 	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
 	<link rel="stylesheet" href="../shaape/css/style.css">
@@ -31,7 +33,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 						<span>Nosotros</span>
 						<h2 >Resumen</h2>
-						<p class="text-justify">Somos una aplicación con la finalidad de luchar principalmente con la corrupción y delicuencia que existe en la capital de Lima - Perú, además de brindar la oportunidad de denunciar otros tipos de incidentes para que así los demás usuarios puedan tener un conocimiento del estado de un cierto lugar.
+						<p >Somos una aplicación con la finalidad de luchar principalmente con la corrupción y delicuencia que existe en la capital de Lima - Perú, además de brindar la oportunidad de denunciar otros tipos de incidentes para que así los demás usuarios puedan tener un conocimiento del estado de un cierto lugar.
                                                 </p>
 					</div>
 				</div>
@@ -40,13 +42,12 @@
 						
 						<div class="desc">
 							<h3>Misión &amp; Visión</h3>
-							<p class="text-justify">La misión de esta aplicación es prestar atención a el llamado de los ciudadanos limeños, que día a día, sufren o presencian series de delitos y/o incidentes que suele pasar muy a menudo en esta capital. Es por ello que mediante este sistema de denuncias anónimas permitimos a los habitantes de la capital peruana, alzar su voz de protesta sin algún tipo de riesgo respecto a su identidad personal.
-                                                        </p> 
+							<p >La misión de esta aplicación es prestar atención a el llamado de los ciudadanos limeños, que día a día, sufren o presencian series de delitos y/o incidentes que suele pasar muy a menudo en esta capital. Es por ello que mediante este sistema de denuncias anónimas permitimos a los habitantes de la capital peruana, alzar su voz de protesta sin algún tipo de riesgo respecto a su identidad personal. </p> 
 							<p>Nuestra visión es poder generalizar más este beneficio para todo el Perú, para que así todos los peruanos seamos escuchados y que juntos podamos luchar contra la corrupción ciudadana</p>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<img class="img-responsive col-md-10" src="../shaape/images/delincuencia.jpg" alt="Delincuencia">
+					<div class="col-md-6 col-md-pull-6">
+						<img class="img-responsive" src="../shaape/images/delincuencia.jpg" alt="Delincuencia">
 					</div>
 					
 				</div>
