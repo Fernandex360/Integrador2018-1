@@ -53,6 +53,7 @@
 							    	<div class="row">
 							    		<div class="col-sm-12">
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
+<<<<<<< HEAD
 											<form action="{{route('inicio')}}" class="col-md-4">
 											<label for="id_distrito">Seleccione el Distrito</label>
 											<select name="id_distrito" id="id_distrito">
@@ -62,6 +63,13 @@
 											</select>
 											</form>
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
+=======
+											<div><select name="" id="">
+											<option value=""></option>
+											</select></div>
+							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
+
+>>>>>>> a9538f0eaf20e73be7b8e34054e44d056c37e500
 
     								<input type="number" name="latitud" id="latitud" hidden required>
     									<input type="number" name="longitud" id="longitud" hidden required>
