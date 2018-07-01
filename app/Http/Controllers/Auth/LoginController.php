@@ -29,6 +29,14 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function redirectPath(){
+        if(auth()->user()->tipo=='admin'){
+            return '/reporte';
+        }else{
+            return '/principal';
+        }
+        
+    }
 
      public function redirectToProvider($provider){
 
@@ -40,7 +48,7 @@ class LoginController extends Controller
 
         $authUser = $this->findOrCreateUser($user, $provider);
         Auth::login($authUser, true);
-        return redirect($this->redirectTo);
+        return redirect($this->redirectPath());
     }
 
     public function findOrCreateUser($user, $provider){

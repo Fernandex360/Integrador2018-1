@@ -14,6 +14,8 @@ Route::get('/','PrincipalController@index')->name('inicio');
 Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController');
 
+Route::get('denunciar','DenunciarController@index')->name('buscar');
+
 Route::resource('administrador','AdminController');
 Route::resource('reporte','ReporteController');
 Route::resource('galeria','GaleriaController');
