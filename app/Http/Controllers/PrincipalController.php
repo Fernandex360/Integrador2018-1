@@ -48,7 +48,6 @@ class PrincipalController extends Controller
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
-<<<<<<< HEAD
             $evidencia=$denuncia->evidencia;
             if(empty($evidencia)){
 
@@ -59,26 +58,9 @@ class PrincipalController extends Controller
                         <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
                         <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
                         <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
-                        <h5><b>Lugar :</h5>
                     </div>
                 </div>";
 
-=======
-
-            $imagen="evidencias/".$denuncia->evidencia;
-            
-            $contenido="
-            <div class='container-fluid'>
-            <div class='row'>
-                <div class='col-12'>
-                    <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
-                    <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
-                    <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
-                    <h5><b>Lugar :</h5>
-                    <h5><b>Evidencia :<img src='".$imagen."' style='width:140%;'></h5>
-                </div>
-            </div>"
->>>>>>> a9538f0eaf20e73be7b8e34054e44d056c37e500
 
             
             }
@@ -92,7 +74,6 @@ class PrincipalController extends Controller
                         <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
                         <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
                         <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
-                        <h5><b>Lugar :</h5>
                         <h5><b>Evidencia :<img src='".$imagen."' style='width:140%;'></h5>
                     </div>
                 </div>";
