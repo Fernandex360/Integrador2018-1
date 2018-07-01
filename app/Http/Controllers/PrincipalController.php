@@ -47,18 +47,20 @@ class PrincipalController extends Controller
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
-
+            $imagen="evidencias/".$denuncia->evidencia;
             $contenido="
             <div class='container-fluid'>
-                <div class='row'>
-                    <div class='col-12'>
-                        <h6>Fecha : <span>".$denuncia->fecha."</span></h6>
-                        <h6>Lugar :</h6>
-                        <h6>Descripcion : ".$denuncia->descripcion."</h6>
-                    </div>
+            <div class='row'>
+                <div class='col-12'>
+                    <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
+                    <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
+                    <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
+                    <h5><b>Lugar :</h5>
+                    <h5><b>Evidencia :<img src='".$imagen."' style='width:140%;'></h5>
                 </div>
-            </div>
-            ";
+            </div>"
+
+            ;
             
 
             \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud, $contenido,['icon' => $marcador[$denuncia->tipoIncidente]]);

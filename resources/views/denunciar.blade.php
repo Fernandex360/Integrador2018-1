@@ -53,6 +53,9 @@
 							    	<div class="row">
 							    		<div class="col-sm-8">
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
+											<div><select name="" id="">
+											<option value=""></option>
+											</select></div>
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
     								<input type="number" name="latitud" id="latitud" hidden required>
