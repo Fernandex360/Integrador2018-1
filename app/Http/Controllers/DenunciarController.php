@@ -57,12 +57,12 @@ class DenunciarController extends Controller
                 $name=time().$file->getClientOriginalName();
                 $file->move(public_path().'/evidencias/',$name);
             }
-            $this->validate($request,['incidente'=>'required','fecha'=>'required',
+            $this->validate($request,['tipoIncidente'=>'required','fecha'=>'required',
             'descripcion'=>'required','latitud'=>'required','longitud' => 'required']);
         
             
              $denuncia = new Denuncia();
-             $denuncia->tipoIncidente=$request->input('incidente');
+             $denuncia->tipoIncidente=$request->input('tipoIncidente');
              $denuncia->fecha=$request->input('fecha');
              $denuncia->descripcion=$request->input('descripcion');
              $denuncia->evidencia= $name;
