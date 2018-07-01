@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Denuncia;
 use App\User;
+use App\Distrito;
 class DenunciarController extends Controller
 {
     public function __construct()
@@ -28,9 +29,11 @@ class DenunciarController extends Controller
         var longitud=event.latLng.lng();
         document.getElementById("latitud").value =latitud;
         document.getElementById("longitud").value =longitud;']);
+     
+        $distritos=Distrito::select('id','distrito')->orderBy('distrito')->get();
 
 
-        return view('denunciar');
+        return view('denunciar',compact('distritos'));
     }
 
     /**
@@ -56,6 +59,8 @@ class DenunciarController extends Controller
                 $file = $request->file('evidencia');
                 $name=time().$file->getClientOriginalName();
                 $file->move(public_path().'/evidencias/',$name);
+            }else{
+                $name="";
             }
             $this->validate($request,['tipoIncidente'=>'required','fecha'=>'required',
             'descripcion'=>'required','latitud'=>'required','longitud' => 'required']);
@@ -68,6 +73,7 @@ class DenunciarController extends Controller
              $denuncia->evidencia= $name;
              $denuncia->latitud=$request->input('latitud');
              $denuncia->longitud=$request->input('longitud');
+             $denuncia->id_distrito=$request->input('id_distrito');
              $denuncia->id_denunciante=auth()->id();
              $denuncia->save();   
              return redirect('/');
