@@ -34,15 +34,15 @@ class PrincipalController extends Controller
             }
         }
        
-        $marcador= array('Drogas'=> '../assets/img/drogas.png',
+        $marcador= array('Venta de Drogas'=> '../assets/img/drogas.png',
                         'Robo'   => '../assets/img/robo.png',
                         'Violencia' => '../assets/img/violencia.png',
                         'Vandalismo' => '../assets/img/vandalismo.png',
                         'Desechos' => '../assets/img/desechos.png',
                         'Homicidio' => '../assets/img/asesinato.png',
-                        'Acoso' => '../assets/img/acoso.png',
+                        'Acoso Callejero' => '../assets/img/acoso.png',
                         'Incendio' => '../assets/img/incendio.png',
-                        'Transito' => '../assets/img/accidente.png',
+                        'Accidente de Transito' => '../assets/img/accidente.png',
                          );
         $denuncias=Denuncia::all();
 
