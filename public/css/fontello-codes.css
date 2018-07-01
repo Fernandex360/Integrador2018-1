@@ -1,0 +1,21 @@
+
+.icon-pencil:before { content: '\e800'; } /* '' */
+.icon-trash-empty:before { content: '\e801'; } /* '' */
+.icon-plus-circled:before { content: '\e802'; } /* '' */
+.icon-users:before { content: '\e803'; } /* '' */
+.icon-home:before { content: '\e804'; } /* '' */
+.icon-logout:before { content: '\e805'; } /* '' */
+.icon-forward:before { content: '\e806'; } /* '' */
+.icon-chart-bar:before { content: '\e807'; } /* '' */
+.icon-picture:before { content: '\e808'; } /* '' */
+.icon-camera:before { content: '\e809'; } /* '' */
+.icon-camera-alt:before { content: '\e80a'; } /* '' */
+.icon-videocam:before { content: '\e80b'; } /* '' */
+.icon-video:before { content: '\e80c'; } /* '' */
+.icon-search:before { content: '\e80d'; } /* '' */
+.icon-eye:before { content: '\e80e'; } /* '' */
+.icon-download-cloud:before { content: '\f0ed'; } /* '' */
+.icon-user-md:before { content: '\f0f0'; } /* '' */
+.icon-building:before { content: '\f0f7'; } /* '' */
+.icon-hospital:before { content: '\f0f8'; } /* '' */
+.icon-medkit:before { content: '\f0fa'; } /* '' */

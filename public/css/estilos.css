@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.cabezera{
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    background: black;
+    border-bottom: solid; 1px black;
+    position: fixed;
+    z-index: 50;
+}
+.cabezera .baner{
+    color: red;
+}
+.cabezera .baner .nombre{
+    font-size: 15px;
+    color: red;
+}
+.barra-lateral{
+    width: 100px;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    z-index: 100;
+}
+.barra-lateral .menu{
+    font-size: 32px;
+    text-align: center;
+
+}
+.barra-lateral a h4{
+    font-size: 14px;
+    color: white;
+    transform: translateX(-200px);
+}
+.barra-lateral a {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    color: white;
+
+}
+.barra-lateral .menu a:hover{
+
+    
+    background: #2E9AFE;
+    text-decoration:none;
+}
+
+.barra-lateral .menu:hover .item1{
+   transform: translateX(0px);
+   transition: all 100ms;
+}
+.barra-lateral .menu:hover .item2{
+   transform: translateX(0px);
+   transition: all 200ms;
+}
+.barra-lateral .menu:hover .item3{
+   transform: translateX(0px);
+   transition: all 300ms;
+}
+.barra-lateral .menu:hover .item4{
+   transform: translateX(0px);
+   transition: all 400ms;
+}
+.barra-lateral .menu:hover .item5{
+   transform: translateX(0px);
+   transition: all 500ms;
+}
+.barra-lateral .menu:hover .item6{
+   transform: translateX(0px);
+   transition: all 600ms;
+}
+.barra-lateral .menu:hover .item7{
+   transform: translateX(0px);
+   transition: all 700ms;
+}
+.barra-lateral .menu:hover .item8{
+   transform: translateX(0px);
+   transition: all 800ms;
+}
+
