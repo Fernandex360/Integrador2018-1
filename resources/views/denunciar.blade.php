@@ -52,8 +52,8 @@
 							    <div class="container">
 							    	<div class="row">
 							    		<div class="col-sm-12">
-							    			<br><br>
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
+<<<<<<< HEAD
 											<div>
 											 <form action="{{route('buscar')}}" name="dis" id="dis" class="col-md-2">
  												<select name="distrito" id="distrito">
@@ -71,8 +71,25 @@
  												}
  											</script>
 											</div>
+=======
+<<<<<<< HEAD
+											<form action="{{route('inicio')}}" class="col-md-4">
+											<label for="id_distrito">Seleccione el Distrito</label>
+											<select name="id_distrito" id="id_distrito">
+											@foreach($distritos as $distrito)
+											<option value="{{$distrito['id']}}">{{$distrito['distrito']}}</option>
+											@endforeach
+											</select>
+											</form>
+							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
+=======
+											<div><select name="" id="">
+											<option value=""></option>
+											</select></div>
+>>>>>>> 3068b43a4f8ea6828033b29bde51e1cb2167bcd3
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
+>>>>>>> a9538f0eaf20e73be7b8e34054e44d056c37e500
 
     								<input type="number" name="latitud" id="latitud" hidden required>
     									<input type="number" name="longitud" id="longitud" hidden required>
@@ -96,7 +113,7 @@
 							                </div>
 							                <div class="col-sm-offset-0">
 							                    <label for="evidencia" class="control-label">Adjunta una imagen como evidencia</label> 	
-							                    <input type="file" id="evidencia" name="evidencia" class="">
+							                    <input type="file" id="evidencia" name="evidencia">
 							                </div>
 							                <br><br><br><br>
 							    		</div>

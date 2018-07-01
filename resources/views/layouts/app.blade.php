@@ -9,10 +9,12 @@
     
      <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+     
     {!! Html::style('../bootstrap4/css/bootstrap.min.css') !!}
     {!! Html::style('../assets/css/material-bootstrap-wizard.css') !!}
+    
 
-
+	<link rel="stylesheet" href="../shaape/css/style.css">
 </head>
 <body>
     <div id="app ">
@@ -95,6 +97,7 @@
     {!! Html::script('../assets/js/jquery.bootstrap.js') !!}
     {!! Html::script('../assets/js/material-bootstrap-wizard.js') !!}
     {!! Html::script('../assets/js/jquery.validate.min.js') !!}
+
         </main>
     </div>
     
