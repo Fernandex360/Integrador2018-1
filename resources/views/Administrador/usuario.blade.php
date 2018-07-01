@@ -9,10 +9,11 @@
                 
                     <table class="table table-striped table-hover" id="tabla">
                         <thead>
-                            <th class="text-center">N°</th>
                             <th class="text-center">Nombre</th>
-                            <th class="text-center">Foto</th>
+                            <th class="text-center">Correo</th>
                             <th class="text-center">Tipo</th>
+                            <th class="text-center">Foto</th>
+                            <th class="text-center">Registrado</th>
                             <th class="text-center">Eliminar</th>
                         </thead>
                         <tbody>
@@ -20,6 +21,7 @@
                                 <tr>
                                   <td>{{$user->name}}</td>
                                   <td>{{$user->email}}</td>
+                                  <td>{{$user->tipo}}</td>
                                   <td><img src="{{ asset($user->avatar) }}" width="100px"></td>
                                   <td>{{$user->provider}}</td>
                                   <td><button class="btn btn-danger btn-sm">Eliminar</button></td>

@@ -54,9 +54,23 @@
 							    		<div class="col-sm-12">
 							    			<br><br>
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
-											<div><select name="" id="">
-											<option value=""></option>
-											</select></div>
+											<div>
+											 <form action="{{route('buscar')}}" name="dis" id="dis" class="col-md-2">
+ 												<select name="distrito" id="distrito">
+													<option value="1">Santa Anita</option>
+													<option value="2">Santa Anita</option>
+													<option value="3">Santa Anita</option>
+													<option value="4">Santa Anita</option>
+												</select>
+												<input type="submit" name="btnenviar">
+ 											</form>
+
+ 											<script type="text/javascript">
+ 												function enviar() {
+ 													$('#form1').submit();
+ 												}
+ 											</script>
+											</div>
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
 
