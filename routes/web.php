@@ -15,6 +15,11 @@ Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController');
 
 Route::resource('administrador','AdminController');
+Route::resource('reporte','ReporteController');
+Route::resource('galeria','GaleriaController');
+Route::resource('usuario','UsuarioController');
+
+
 Route::resource('estadistica','estadisticaController');
 
 Route::get('aplicacion',function(){

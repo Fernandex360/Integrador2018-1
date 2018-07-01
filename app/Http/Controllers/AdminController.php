@@ -81,7 +81,7 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-    Denuncia::find($id)->delete();
- return redirect()->route('administrador.index')->with('success','Registro eliminado satisfactoriamente');
+        Denuncia::find($id)->delete();
+        return redirect()->route('administrador.index')->with('success','Registro eliminado satisfactoriamente');
     }
 }

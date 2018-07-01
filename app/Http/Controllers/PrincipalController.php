@@ -44,16 +44,19 @@ class PrincipalController extends Controller
                         'Incendio' => '../assets/img/incendio.png',
                         'Transito' => '../assets/img/accidente.png',
                          );
+
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
 
+            $imagen="evidencias/".$denuncia->evidencia;
             $contenido="
             <div class='container-fluid'>
                 <div class='row'>
                     <div class='col-12'>
                         <h6>Fecha : <span>".$denuncia->fecha."</span></h6>
                         <h6>Lugar :</h6>
+                        <img src='".$imagen."'width='100px'>
                         <h6>Descripcion : ".$denuncia->descripcion."</h6>
                     </div>
                 </div>
@@ -63,9 +66,6 @@ class PrincipalController extends Controller
 
             \Mapper::informationWindow($denuncia->latitud, $denuncia->longitud, $contenido,['icon' => $marcador[$denuncia->tipoIncidente]]);
         }
-
-
-
 
         return view('principal');
     }
