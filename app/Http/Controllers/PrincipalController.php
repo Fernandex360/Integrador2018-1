@@ -48,7 +48,10 @@ class PrincipalController extends Controller
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34e0053cc80f6aac13d17c08e3b27b0c8cd358f0
             $evidencia=$denuncia->evidencia;
             if(empty($evidencia)){
 
@@ -59,7 +62,6 @@ class PrincipalController extends Controller
                         <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
                         <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
                         <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
-                        <h5><b>Lugar :</h5>
                     </div>
                 </div>";
 
@@ -76,7 +78,6 @@ class PrincipalController extends Controller
                         <h5><b>Fecha : <span>".$denuncia->fecha."</span></h5>
                         <h5><b>Tipo de Incidente : <span>".$denuncia->tipoIncidente."</span></h5>
                         <h5><b>Descripcion : ".$denuncia->descripcion."</h5>
-                        <h5><b>Lugar :</h5>
                         <h5><b>Evidencia :<img src='".$imagen."' style='width:140%;'></h5>
                     </div>
                 </div>";
