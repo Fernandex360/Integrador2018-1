@@ -80,8 +80,31 @@
 							                </div>
 							                <div class="col-sm-offset-0">
 							                    <label for="evidencia" class="control-label">Adjunta una imagen como evidencia</label> 	
-							                    <input type="file" id="evidencia" name="evidencia">
-							                </div>
+												<input type="file" id="evidencia" name="evidencia" onchange="ValidarImagen(this);">
+											<script>
+												function ValidarImagen(obj){
+													var uploadFile = obj.files[0];
+													
+													if (!window.FileReader) {
+														alert('El navegador no soporta la lectura de archivos');
+														return;
+													}
+
+													if (!(/\.(jpg|png|gif)$/i).test(uploadFile.name)) {
+														alert('El archivo a adjuntar no es una imagen');
+													}
+													else {
+														var img = new Image();
+														img.onload = function () {
+
+																alert('Imagen correcta')                
+									
+														};
+														img.src = URL.createObjectURL(uploadFile);
+													}                 
+												}
+														</script>
+																							</div>
 							                <br><br><br><br>
 							    		</div>
 							    	</div>

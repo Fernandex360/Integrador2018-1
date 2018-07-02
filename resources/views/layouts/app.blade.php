@@ -20,11 +20,6 @@
 <body>
     <div id="app ">
     <nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
-<<<<<<< HEAD
-      <a class="navbar-brand ml-5" href="/"><img src="../shaape/images/seguridad.png" alt="logo" style="width:25%;height:5%" ></a>
-=======
-      
->>>>>>> 38dae835a5997b9ae0807dc7fc0035ae5257809c
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

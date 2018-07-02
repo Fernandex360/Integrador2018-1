@@ -64,7 +64,7 @@ class DenunciarController extends Controller
                 $name="";
             }
             $this->validate($request,['tipoIncidente'=>'required','fecha'=>'required',
-            'descripcion'=>'required','evidencia'=>'image','latitud'=>'required','longitud' => 'required']);
+            'descripcion'=>'required','latitud'=>'required','longitud' => 'required']);
         
             
              $denuncia = new Denuncia();

@@ -11,7 +11,7 @@
 |
 */
 Route::get('/','PrincipalController@index')->name('inicio');
-Route::resource('principal','PrincipalController')->;
+Route::resource('principal','PrincipalController');
 Route::resource('denunciar','DenunciarController')->middleware('auth');
 
 Route::get('denunciar','DenunciarController@index')->name('buscar')->middleware('auth');
