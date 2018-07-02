@@ -20,7 +20,7 @@
 <body>
     <div id="app ">
     <nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
-      <a class="navbar-brand ml-5" href="/">STOPCRIME</a>
+      <a class="navbar-brand ml-5" href="/"><img src="../shaape/images/seguridad.png" alt="logo" style="width:25%;height:5%" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
