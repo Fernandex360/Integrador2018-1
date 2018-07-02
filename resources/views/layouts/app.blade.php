@@ -12,6 +12,7 @@
      
     {!! Html::style('../bootstrap4/css/bootstrap.min.css') !!}
     {!! Html::style('../assets/css/material-bootstrap-wizard.css') !!}
+    {!! Html::script('../assets/js/jquery-2.2.4.min.js') !!}
     
 
 	<link rel="stylesheet" href="../shaape/css/style.css">
@@ -92,7 +93,7 @@
         <main class="col-md-12 m-0 p-0">
             @yield('content')
      
-    {!! Html::script('../assets/js/jquery-2.2.4.min.js') !!}
+    
     {!! Html::script('../assets/js/bootstrap.min.js') !!}
     {!! Html::script('../assets/js/jquery.bootstrap.js') !!}
     {!! Html::script('../assets/js/material-bootstrap-wizard.js') !!}
