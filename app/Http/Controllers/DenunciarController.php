@@ -31,10 +31,9 @@ class DenunciarController extends Controller
         document.getElementById("latitud").value =latitud;
         document.getElementById("longitud").value =longitud;']);
      
-        $distritos=Distrito::select('id','distrito')->orderBy('distrito')->get();
+       
 
-
-        return view('denunciar',compact('distritos'));
+        return view('denunciar');
     }
 
     /**
