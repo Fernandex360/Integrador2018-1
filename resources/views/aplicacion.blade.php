@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-
 @section('titulo','Aplicacion')
 
 <!doctype html>
@@ -114,7 +111,7 @@
 
 
     <!--Header-area-->
-    <header class="header-area overlay full-height relative v-center" id="home-page">
+    <header class="header-area overlay full-height relative v-center mt-5 " id="home-page">
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
@@ -157,4 +154,3 @@
 
 </html>
 
->>>>>>> 9dbcc0e0c56b7f6ceb630d68d56f59317b9cc876
