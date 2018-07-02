@@ -48,7 +48,6 @@ class PrincipalController extends Controller
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
-
             $evidencia=$denuncia->evidencia;
             
             if(empty($evidencia)){

@@ -1,19 +1,23 @@
 <head>
 	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="../shaape/css/animate.css">
-	{!! Html::style('../bootstrap4/css/bootstrap.min.css') !!}
-	<title>@yield('app.name', 'Denuncias Anonimas')</title>
+
 
 
 	<link rel="stylesheet" href="../shaape/css/icomoon.css">
-		<link rel="stylesheet" href="../shaape/css/bootstrap.css">
+	<link rel="stylesheet" href="../shaape/css/bootstrap.css">
+	{!! Html::style('../bootstrap4/css/bootstrap.min.css') !!}
 
+		
 	<link rel="stylesheet" href="../shaape/css/magnific-popup.css">
+
 	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
+
 	<link rel="stylesheet" href="../shaape/css/style.css">
+	
 	</head>
 	<nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
-      <a class="navbar-brand ml-5" href="/">Menu</a>
+      <a class="navbar-brand ml-5" href="/">STOPCRIME</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -97,6 +101,37 @@
 			</div>
 		</div>
 	</header>
+	<div id="fh5co-about">
+		<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Nosotros</span>
+						<h2>Resumen</h2>
+						<p>Somos una aplicación con la finalidad de luchar principalmente con la corrupción y delicuencia que existe en la capital de Lima - Perú, además de brindar la oportunidad
+                                                de denunciar otros tipos de incidentes para que así los demás usuarios puedan tener un conocimiento del estado de un cierto lugar.
+                                                </p>
+					</div>
+				</div>
+				<div class="row row-pb-md animate-box">
+					<div class="col-md-6 col-md-push-6">
+						
+						<div class="desc">
+							<h3>Misión &amp; Visión</h3>
+							<p>La misión de esta aplicación es prestar atención a el llamado de los ciudadanos limeños, que día a día, sufren o presencian series de delitos y/o incidentes que suele pasar muy a menudo en esta capital. Es por ello que mediante este sistema de denuncias anónimas permitimos
+                                                         a los habitantes de la capital peruana, alzar su voz de protesta sin algún tipo de riesgo respecto a su identidad personal.
+                                                        </p> 
+							<p>Nuestra visión es poder generalizar más este beneficio para todo el Perú, para que así todos los peruanos seamos escuchados y que juntos podamos luchar contra la corrupción ciudadana</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-pull-6">
+						<img class="img-responsive" src="../shaape/images/delincuencia.jpg" alt="Delincuencia">
+					</div>
+					
+				</div>
+			
+		</div>
+	</div>
+
 
 	
 	<div id="fh5co-team" class="fh5co-bg-section">
