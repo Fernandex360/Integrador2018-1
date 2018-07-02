@@ -46,7 +46,8 @@ class UsuarioController extends Controller
      */
     public function show($id)
     {
-        //
+        $users=User::find($id);
+        return view('usuario.show',compact('users'));
     }
 
     /**
@@ -80,6 +81,7 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::find($id)->delete();
+        return redirect()->route('usuario.index')->with('success','Usuario eliminado satisfactoriamente');
     }
 }
