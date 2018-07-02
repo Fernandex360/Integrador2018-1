@@ -11,16 +11,14 @@
 |
 */
 Route::get('/','PrincipalController@index')->name('inicio');
-Route::resource('principal','PrincipalController');
-Route::resource('denunciar','DenunciarController');
+Route::resource('principal','PrincipalController')->;
+Route::resource('denunciar','DenunciarController')->middleware('auth');
 
-Route::get('denunciar','DenunciarController@index')->name('buscar');
+Route::get('denunciar','DenunciarController@index')->name('buscar')->middleware('auth');
 
-Route::resource('reporte','ReporteController');
-Route::resource('galeria','GaleriaController');
-Route::resource('usuario','UsuarioController');
-Route::get('mapa','mapaController@index')->name('mapa');
-
+Route::resource('reporte','ReporteController')->middleware('auth');
+Route::resource('galeria','GaleriaController')->middleware('auth');
+Route::resource('usuario','UsuarioController')->middleware('auth');
 
 Route::resource('estadistica','estadisticaController');
 
