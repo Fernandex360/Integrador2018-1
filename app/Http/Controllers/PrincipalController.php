@@ -48,10 +48,6 @@ class PrincipalController extends Controller
         $denuncias=Denuncia::all();
 
         foreach ($denuncias as $denuncia) {
-<<<<<<< HEAD
-
-=======
->>>>>>> 34e0053cc80f6aac13d17c08e3b27b0c8cd358f0
             $evidencia=$denuncia->evidencia;
             if(empty($evidencia)){
 

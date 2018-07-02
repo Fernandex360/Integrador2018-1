@@ -53,58 +53,19 @@
 							    	<div class="row">
 							    		<div class="col-sm-12">
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
-<<<<<<< HEAD
-											<div style="width:60vw; height: 80vh;">{!! Mapper::render()!!}</div>
-											<input type="number" name="latitud" id="latitud" hidden required>
-											<input type="number" name="longitud" id="longitud" hidden required>
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-											<div>
-											 <form action="{{route('buscar')}}" name="dis" id="dis" class="col-md-2">
- 												<select name="distrito" id="distrito">
-													<option value="1">Santa Anita</option>
-													<option value="2">Santa Anita</option>
-													<option value="3">Santa Anita</option>
-													<option value="4">Santa Anita</option>
-												</select>
-												<input type="submit" name="btnenviar">
- 											</form>
-
- 											<script type="text/javascript">
- 												function enviar() {
- 													$('#form1').submit();
- 												}
- 											</script>
-											</div>
-=======
-<<<<<<< HEAD
->>>>>>> 79a8efa145afd6d87dd4b836fadfc39bc2f766d4
-											<form action="{{route('inicio')}}" class="col-md-4">
+							
 											<label for="id_distrito">Seleccione el Distrito</label>
 											<select name="id_distrito" id="id_distrito">
 											@foreach($distritos as $distrito)
 											<option value="{{$distrito['id']}}">{{$distrito['distrito']}}</option>
 											@endforeach
 											</select>
-											</form>
-							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
-<<<<<<< HEAD
-=======
-=======
-											<div><select name="" id="">
-											<option value=""></option>
-											</select></div>
->>>>>>> 3068b43a4f8ea6828033b29bde51e1cb2167bcd3
-							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
->>>>>>> a9538f0eaf20e73be7b8e34054e44d056c37e500
->>>>>>> 79a8efa145afd6d87dd4b836fadfc39bc2f766d4
+							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
     								<input type="number" name="latitud" id="latitud" hidden required>
     									<input type="number" name="longitud" id="longitud" hidden required>
->>>>>>> 34e0053cc80f6aac13d17c08e3b27b0c8cd358f0
+
 							    		</div>
 							    	</div>
 							    </div>
