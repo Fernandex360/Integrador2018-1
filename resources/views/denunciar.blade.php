@@ -54,6 +54,11 @@
 							    		<div class="col-sm-12">
 							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
 <<<<<<< HEAD
+											<div style="width:60vw; height: 80vh;">{!! Mapper::render()!!}</div>
+											<input type="number" name="latitud" id="latitud" hidden required>
+											<input type="number" name="longitud" id="longitud" hidden required>
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 											<div>
@@ -99,6 +104,7 @@
 
     								<input type="number" name="latitud" id="latitud" hidden required>
     									<input type="number" name="longitud" id="longitud" hidden required>
+>>>>>>> 34e0053cc80f6aac13d17c08e3b27b0c8cd358f0
 							    		</div>
 							    	</div>
 							    </div>
