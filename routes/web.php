@@ -34,3 +34,4 @@ Route::get('nosotros',function(){
 Auth::routes();
 Route::get('auth/{provider}','Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback','Auth\LoginController@handleProviderCallback');
+

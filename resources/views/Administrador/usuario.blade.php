@@ -14,7 +14,6 @@
                             <th class="text-center">Tipo</th>
                             <th class="text-center">Foto</th>
                             <th class="text-center">Registrado</th>
-                            <th class="text-center">Eliminar</th>
                         </thead>
                         <tbody>
                             @foreach($users as $user)
@@ -24,13 +23,7 @@
                                   <td>{{$user->tipo}}</td>
                                   <td><img src="{{ asset($user->avatar) }}" width="100px"></td>
                                   <td>{{$user->provider}}</td>
-
-                                  <td>
-                                  <form action="{{action('UsuarioController@destroy', $user->id)}}" method="post">
-                                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Eliminar</button>
-                                  {{csrf_field()}}
-                             </td>
-                            </tr>
+                                    </tr>
                             @endforeach
                         </tbody>
                     </table>

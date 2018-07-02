@@ -24,17 +24,16 @@ class DenunciarController extends Controller
     {
 
 
-        \Mapper::location('peru lima  santa anita huarochiri ')->map(['center' => false ,'zoom' => 10,'marker' => true,'draggable' => true,
+        \Mapper::location('peru lima  santa anita huarochiri ')->map(['center' => true ,'zoom' => 10,'marker' => true,'draggable' => true,
         'eventDragEnd' => 
         'var latitud=event.latLng.lat();
         var longitud=event.latLng.lng();
         document.getElementById("latitud").value =latitud;
         document.getElementById("longitud").value =longitud;']);
      
-        $distritos=Distrito::select('id','distrito')->orderBy('distrito')->get();
+       
 
-
-        return view('denunciar',compact('distritos'));
+        return view('denunciar');
     }
 
     /**
@@ -74,7 +73,6 @@ class DenunciarController extends Controller
              $denuncia->evidencia= $name;
              $denuncia->latitud=$request->input('latitud');
              $denuncia->longitud=$request->input('longitud');
-             $denuncia->id_distrito=$request->input('id_distrito');
              $denuncia->id_denunciante=auth()->id();
              $denuncia->save();   
              return redirect('/');

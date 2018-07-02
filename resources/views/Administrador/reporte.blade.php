@@ -29,10 +29,32 @@
                              <td>{{$denuncia->id_distrito}}</td>
                              <td><img src="{{ asset('evidencias/'.$denuncia->evidencia) }}" width="100px"></td>
                              <td>
-                             <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Eliminar</button>
-                             <form action="{{action('ReporteController@destroy', $denuncia->id)}}" method="post">
-                             {{csrf_field()}}
-                             </td>
+                                <form action="{{action('ReporteController@destroy', $denuncia->id)}}" method="post">
+                                  {{csrf_field()}}
+                                  <input name="_method" type="hidden" value="DELETE">
+                                  <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter" type="button">Eliminar</button>
+                                  <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">ADVERTENCIA</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ¿Estas seguro de eliminar este registro?
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                                  </form>
+                              </td>
                            </tr>
                           @endforeach 
                         </tbody>
@@ -69,26 +91,7 @@
   </div>
   
 </div>
-<!-- Modal -->
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenterTitle">ADVERTENCIA</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    ¿Estas seguro de eliminar este registro?
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-primary">Aceptar</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+
 <script>
 $('#mostrar img').click(function (){
   
