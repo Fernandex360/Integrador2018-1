@@ -5,16 +5,19 @@
 
 
 	<link rel="stylesheet" href="../shaape/css/icomoon.css">
-		<link rel="stylesheet" href="../shaape/css/bootstrap.css">
-
-	<link rel="stylesheet" href="../shaape/css/magnific-popup.css">
-	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
+	<link rel="stylesheet" href="../shaape/css/bootstrap.css">
 	{!! Html::style('../bootstrap4/css/bootstrap.min.css') !!}
+
+		
+	<link rel="stylesheet" href="../shaape/css/magnific-popup.css">
+
+	<script src="../shaape/js/modernizr-2.6.2.min.js"></script>
+
 	<link rel="stylesheet" href="../shaape/css/style.css">
 	
 	</head>
 	<nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
-      <a class="navbar-brand ml-5" href="/">Menu</a>
+      <a class="navbar-brand ml-5" href="/">STOPCRIME</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
