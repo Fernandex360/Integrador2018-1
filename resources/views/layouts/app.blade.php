@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('app.name', 'Denuncias Anonimas')</title>
+    <title>@yield('titulo', 'Denuncias Anonimas')</title>
     
      <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
@@ -20,7 +20,7 @@
 <body>
     <div id="app ">
     <nav  class="navbar-expand-lg navbar navbar-light " style="background-color: rgb(0, 194, 169);">
-      <a class="navbar-brand ml-5" href="/">STOPCRIME</a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

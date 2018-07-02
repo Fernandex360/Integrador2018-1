@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('titulo','Estadistica')
 @section('content')
 
 <script type="text/javascript">

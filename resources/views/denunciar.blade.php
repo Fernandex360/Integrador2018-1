@@ -1,6 +1,6 @@
 
 @extends('layouts.app')
-
+@section('titulo','Denunciar')
 @section('content')
 
 @if(count($errors)>0)
@@ -52,25 +52,12 @@
 							    <div class="container">
 							    	<div class="row">
 							    		<div class="col-sm-12">
-<<<<<<< HEAD
-							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el 
 
-							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
-    									<input type="number" name="latitud" id="latitud" hidden required>
-=======
-							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el inicidente.</h4>
-							
-											<label for="id_distrito">Seleccione el Distrito</label>
-											<select name="id_distrito" id="id_distrito">
-											@foreach($distritos as $distrito)
-											<option value="{{$distrito['id']}}">{{$distrito['distrito']}}</option>
-											@endforeach
-											</select>
-
+							    			<h4 class="info-text">Marque el lugar exacto donde sucedió el Inicidente</h4>
 							               <div style="width: 60vw; height: 80vh;">{!! Mapper::render()!!}</div>
 
-    								<input type="number" name="latitud" id="latitud" hidden required>
->>>>>>> 57e7d490f0d2f5be0a5fda3455b7583a702d3613
+    										<input type="number" name="latitud" id="latitud" hidden required>
+
     									<input type="number" name="longitud" id="longitud" hidden required>
 
 							    		</div>

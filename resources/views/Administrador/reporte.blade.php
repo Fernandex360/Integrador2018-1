@@ -1,4 +1,5 @@
 @extends('layouts.admin')
+@section('titulo','reporte')
 @section('contenido')
 <div class="container-fluid col-10">
     <div class="row align-items-center">
