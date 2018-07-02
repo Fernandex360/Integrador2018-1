@@ -18,7 +18,7 @@ class CreateDenunciasTable extends Migration
             $table->string('tipoIncidente');
             $table->date('fecha');
             $table->text('descripcion');
-            $table->string('evidencia');
+            $table->string('evidencia')->nullable();
             $table->enum('estado',['confirmado','eliminado'])->default('confirmado');
             $table->double('latitud',20,10);
             $table->double('longitud',20,10);
