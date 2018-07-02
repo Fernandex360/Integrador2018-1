@@ -73,7 +73,6 @@ class DenunciarController extends Controller
              $denuncia->evidencia= $name;
              $denuncia->latitud=$request->input('latitud');
              $denuncia->longitud=$request->input('longitud');
-             $denuncia->id_distrito=$request->input('id_distrito');
              $denuncia->id_denunciante=auth()->id();
              $denuncia->save();   
              return redirect('/');
