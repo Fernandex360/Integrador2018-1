@@ -26,7 +26,7 @@
 	 	 	 </div>
 			   @endif
 
-<div class="image-container set-full-height m-0" style="background-image: url('../assets/img/wizard-book.jpg')">
+<div class="image-container set-full-height m-0" >
 
 <div class="container-fluid ">
 	<div class="row mt-0 justify-content-center align-items-center">
