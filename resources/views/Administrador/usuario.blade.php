@@ -17,6 +17,7 @@
                             <th class="text-center">Eliminar</th>
                         </thead>
                         <tbody>
+                          @if($users->count())
                             @foreach($users as $user)
                                 <tr>
                                   <td>{{$user->name}}</td>
@@ -24,13 +25,48 @@
                                   <td>{{$user->tipo}}</td>
                                   <td><img src="{{ asset($user->avatar) }}" width="100px"></td>
                                   <td>{{$user->provider}}</td>
-                                  <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
-                                </tr>
+
+                                  <td>
+                                  <form action="{{action('UsuarioController@destroy', $user->id)}}" method="post">
+                                  <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Eliminar</button>
+                                  {{csrf_field()}}
+                           <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">ADVERTENCIA</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ¿Estas seguro de eliminar este usuario?
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <input name="_method" type="hidden" value="DELETE">
+
+                                    <button type="submit" class="btn btn-primary">Aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+ 
+                             </td>
+                            </tr>
                             @endforeach
+                            @else
+                            <tr>
+                            <td colspan="3">No existen usuarios registrados</td>
+                            </tr>
+                            @endif
                         </tbody>
                     </table>
                 </div>
             </div>
+
+
         </div>
     </div>
 </div>

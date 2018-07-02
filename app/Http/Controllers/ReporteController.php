@@ -16,7 +16,7 @@ class ReporteController extends Controller
     {
         $denuncias=Denuncia::all();
 
-       return view('Administrador.reporte')->with('denuncias',$denuncias);
+       return view('Administrador.reporte',compact('denuncias'));
     }
 
     /**
@@ -48,7 +48,8 @@ class ReporteController extends Controller
      */
     public function show($id)
     {
-        //
+        $denuncias=Denuncia::find($id);
+        return view('reporte.show',compact('denuncias'));
     }
 
     /**
@@ -82,6 +83,7 @@ class ReporteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Denuncia::find($id)->delete();
+        return redirect()->route('reporte.index')->with('success','Registro eliminado satisfactoriamente');
     }
 }
