@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('contenido')
 <div class="container-fluid col-11 mr-3">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-md-12">
             <div class="card mt-3">
                 <div class="card-header"><h4 class="text-center h5">Lista de Usuarios </h4></div>
@@ -17,7 +17,6 @@
                             <th class="text-center">Eliminar</th>
                         </thead>
                         <tbody>
-                          @if($users->count())
                             @foreach($users as $user)
                                 <tr>
                                   <td>{{$user->name}}</td>
@@ -30,7 +29,19 @@
                                   <form action="{{action('UsuarioController@destroy', $user->id)}}" method="post">
                                   <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Eliminar</button>
                                   {{csrf_field()}}
-                           <!-- Modal -->
+                             </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal -->
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -52,22 +63,5 @@
                                 </div>
                               </div>
                             </div>
- 
-                             </td>
-                            </tr>
-                            @endforeach
-                            @else
-                            <tr>
-                            <td colspan="3">No existen usuarios registrados</td>
-                            </tr>
-                            @endif
-                        </tbody>
-                    </table>
-                </div>
-            </div>
 
-
-        </div>
-    </div>
-</div>
 @endsection

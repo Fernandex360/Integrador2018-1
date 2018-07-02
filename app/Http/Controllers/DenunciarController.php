@@ -24,7 +24,7 @@ class DenunciarController extends Controller
     {
 
 
-        \Mapper::location('peru lima ')->map(['center' => true ,'zoom' => 10,'marker' => true,'draggable' => true,
+        \Mapper::location('peru lima  santa anita huarochiri ')->map(['center' => false ,'zoom' => 10,'marker' => true,'draggable' => true,
         'eventDragEnd' => 
         'var latitud=event.latLng.lat();
         var longitud=event.latLng.lng();

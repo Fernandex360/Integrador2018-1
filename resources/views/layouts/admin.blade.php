@@ -23,7 +23,6 @@
             <div class="barra-lateral">
             <nav class="menu ">
                 <a href="/reporte"><span class=" icon-eye"></span><h4 class="item2">Registros</h4></a>
-                <a href="/galeria"><span class="icon-camera"></span><h4 class="item3">Evidencias</h4></a>
                 <a href="/usuario"><span class="icon-users"></span><h4 class="item7">Usuarios</h4></a>
                 <a href="#" id="enviar"><span class="icon-logout"></span><h4 class="item8">Salir</h4></a>
 

@@ -1,7 +1,8 @@
 @extends('layouts.admin')
+@section('titulo','reporte')
 @section('contenido')
-<div class="container-fluid col-11 mr-3">
-    <div class="row">
+<div class="container-fluid col-10">
+    <div class="row align-items-center">
         <div class="col-md-12">
             <div class="card mt-3">
               <div class="card-header"><h4 class="text-center h5">Lista de Denuncias Realizadas</h4></div>
@@ -18,7 +19,6 @@
                             <th class="text-center">Eliminar</th>   
                         </thead>
                         <tbody id="mostrar">
-                          @if($denuncias->count())
                           @foreach($denuncias as $denuncia)
                            <tr>
                              <td>{{$denuncia->id}}</td>
@@ -29,11 +29,47 @@
                              <td>{{$denuncia->id_distrito}}</td>
                              <td><img src="{{ asset('evidencias/'.$denuncia->evidencia) }}" width="100px"></td>
                              <td>
-
                              <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Eliminar</button>
                              <form action="{{action('ReporteController@destroy', $denuncia->id)}}" method="post">
                              {{csrf_field()}}
-                           <!-- Modal -->
+                             </td>
+                           </tr>
+                          @endforeach 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img src="{{ asset('evidencias/1530307896Captura de pantalla de 2018-06-08 22-19-11.png') }}" alt="" class="rounded-0 col-md-12" id="panel">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!-- Modal -->
                             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -53,50 +89,6 @@
                                 </div>
                               </div>
                             </div>
-                             </td>
-                           </tr>
-                          @endforeach 
-                          @else
-                          <tr>
-                          <td colspan="8">No existen registros</td>
-                          </tr>
-                          @endif
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-<div class="container">
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h4 class="modal-title">Usuario ::::::</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <img src="{{ asset('evidencias/1530307896Captura de pantalla de 2018-06-08 22-19-11.png') }}" alt="" class="rounded-0 col-md-12" id="panel">
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
-
 <script>
 $('#mostrar img').click(function (){
   
