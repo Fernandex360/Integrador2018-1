@@ -1,4 +1,3 @@
-
 @section('titulo','Aplicacion')
 
 <!doctype html>
@@ -82,9 +81,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Administrador') }}</a>
-            </li>
             @else
             <li class="nav-item dropdown ">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -112,7 +108,7 @@
 
 
     <!--Header-area-->
-    <header class="header-area overlay full-height relative v-center" id="home-page">
+    <header class="header-area overlay full-height relative v-center mt-5 " id="home-page">
         <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
