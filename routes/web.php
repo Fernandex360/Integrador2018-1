@@ -20,6 +20,7 @@ Route::resource('administrador','AdminController');
 Route::resource('reporte','ReporteController');
 Route::resource('galeria','GaleriaController');
 Route::resource('usuario','UsuarioController');
+Route::get('mapa','mapaController@index')->name('mapa');
 
 
 Route::resource('estadistica','estadisticaController');

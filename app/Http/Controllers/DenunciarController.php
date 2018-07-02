@@ -23,7 +23,8 @@ class DenunciarController extends Controller
     public function index()
     {
 
-        \Mapper::location('peru lima ate')->map(['zoom' => 15,'center' => true, 'marker' => true,'draggable' => true,
+
+        \Mapper::location('peru lima ')->map(['center' => true ,'zoom' => 10,'marker' => true,'draggable' => true,
         'eventDragEnd' => 
         'var latitud=event.latLng.lat();
         var longitud=event.latLng.lng();
