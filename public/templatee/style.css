@@ -160,8 +160,8 @@ input:-webkit-autofill:focus {
 }
 
 .social-menu li a:hover {
-    background-color: #138fc2;
-    color: #ffffff;
+
+    color:  #000000;
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -172,15 +172,13 @@ input:-webkit-autofill:focus {
 
 .overlay:before,
 .sky-bg {
-    background: #75cbe7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#75cbe7), to(#138fc2));
-    background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
+
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-    color: #ffffff;
+    color:  #000000;
 }
 
 .gray-bg {
-    background-color: #f2fefe;
+    background-color:  #000000;
 }
 
 /**
@@ -191,7 +189,7 @@ input:-webkit-autofill:focus {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 50px;
-    color: #ffffff;
+    color:  #000000;
     background-color: #2f60c3;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -202,13 +200,13 @@ input:-webkit-autofill:focus {
 
 .button.white,
 .button:hover {
-    background-color: #ffffff;
+    background-color:  white;
     color: #138fc2;
 }
 
 .button.white:hover {
-    background-color: #2f60c3;
-    color: #ffffff;
+    background-color: #03ebcc;
+    color:  #000000;
 }
 
 .button i {
@@ -250,8 +248,8 @@ input:-webkit-autofill:focus {
 .box {
     padding: 50px 30px;
     text-align: center;
-    -webkit-box-shadow: 0 0 0 0 #ffffff;
-    box-shadow: 0 0 0 0 #ffffff;
+    -webkit-box-shadow: 0 0 0 0  #000000;
+    box-shadow: 0 0 0 0  #000000;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 5px;
@@ -262,7 +260,7 @@ input:-webkit-autofill:focus {
 .box:hover {
     -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color:  #000000;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px)
 }
@@ -305,7 +303,7 @@ input:-webkit-autofill:focus {
 .overlay,
 .overlay a,
 .mainmenu-area a {
-    color: #ffffff;
+    color:  #000000;
 }
 
 .mainmenu-area .logo {
@@ -353,7 +351,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area #primary-menu ul li.active a,
 .mainmenu-area #primary-menu ul li a:hover {
-    border-top: 3px solid #ffffff;
+    border-top: 3px solid  #000000;
 }
 
 .mainmenu-area.affix {
@@ -467,7 +465,7 @@ input:-webkit-autofill:focus {
     top: -2px;
     width: 100%;
     height: 3px;
-    background-color: #ffffff;
+    background-color:  #000000;
     opacity: 0;
 }
 
